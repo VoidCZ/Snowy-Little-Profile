@@ -1,7 +1,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #161616ff;
-  color: #333;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   transition: background 0.3s, color 0.3s;
@@ -29,7 +29,7 @@ main {
 }
 
 section {
-  background: white;
+  background: rgb(61, 61, 61);
   margin-bottom: 1.5em;
   padding: 1.5em;
   border-radius: 10px;
@@ -37,7 +37,7 @@ section {
 }
 
 h2 {
-  color: #4e4376;
+  color: #11cbd8;
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.3em;
   margin-bottom: 0.8em;
@@ -53,11 +53,11 @@ ul li {
 }
 
 .project-card {
-  background: #f9f9f9;
+  background: rgb(61, 61, 61);
   padding: 1em;
   border-radius: 8px;
   margin-bottom: 1em;
-  border-left: 4px solid #4e4376;
+  border-left: 4px solid #5810b6;
 }
 
 footer {
