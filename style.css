@@ -92,6 +92,13 @@ body.dark footer {
   color: var(--accent);
 }
 
+body.forest {
+  --bg-color: #0f1c11;
+  --text-color: #d2e3d2;
+  --card-bg: #1e3522;
+  --accent: #63c76a;
+}
+
 button {
   background: var(--card-bg);
   border: none;
