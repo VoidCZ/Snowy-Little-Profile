@@ -92,8 +92,18 @@ body.dark footer {
   color: var(--accent);
 }
 
+button {
+  background: var(--card-bg);
+  border: none;
+  color: var(--accent);
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
 button:hover {
   cursor: pointer;
   background-color: var(--accent);
-  color: #00ffff;
+  color: #ffff00;
 }
