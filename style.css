@@ -75,11 +75,32 @@ footer {
   color: var(--accent);
 }
 
+body.light {
+  --bg-color: #f4f4f4;
+  --text-color: #222;
+  --card-bg: #fff;
+  --accent: #4e4376;
+}
+
 body.dark {
   --bg-color: #1a1a1a;
   --text-color: #ddd;
   --card-bg: #494949;
   --accent: #00ffff;
+}
+
+body.void {
+  --bg-color: #05010a;
+  --text-color: #e0d9ff;
+  --card-bg: #0f0a1a;
+  --accent: #a14eff;
+}
+
+body.forest {
+  --bg-color: #0f1c11;
+  --text-color: #d2e3d2;
+  --card-bg: #1e3522;
+  --accent: #63c76a;
 }
 
 body.dark section {
@@ -90,13 +111,6 @@ body.dark section {
 body.dark footer {
   background: var(--bg-color);
   color: var(--accent);
-}
-
-body.forest {
-  --bg-color: #0f1c11;
-  --text-color: #d2e3d2;
-  --card-bg: #1e3522;
-  --accent: #63c76a;
 }
 
 button {
