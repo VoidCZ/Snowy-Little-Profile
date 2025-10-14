@@ -80,3 +80,32 @@ body.dark footer {
   background: #111;
   color: #aaa;
 }
+
+:root {
+  /* Default Light Theme */
+  --bg-color: #f4f4f4;
+  --text-color: #222;
+  --card-bg: #fff;
+  --accent: #4e4376;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Use variables everywhere */
+section {
+  background: var(--card-bg);
+  border-left: 4px solid var(--accent);
+}
+
+/* Dark Theme Override */
+body.dark {
+  --bg-color: #1a1a1a;
+  --text-color: #ddd;
+  --card-bg: #2b2b2b;
+  --accent: #9b84ff;
+}
