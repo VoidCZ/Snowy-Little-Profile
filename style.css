@@ -142,12 +142,6 @@ body.dark section {
   border-left: 4px solid var(--accent);
 }
 
-body.dark footer {
-  background: var(--bg-color);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: var(--accent);
-}
-
 button {
   background: var(--card-bg);
   border: none;
