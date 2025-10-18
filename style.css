@@ -126,5 +126,5 @@ button {
 button:hover {
   cursor: pointer;
   background-color: var(--accent);
-  color: #ffff00;
+  color: #ff0000;
 }
