@@ -7,6 +7,9 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://cdn.discordapp.com/attachments/1429057501441294396/1429072199167512727/Q27Z5Op.jpg?ex=68f4ceb3&is=68f37d33&hm=82a5ffedbb450f01b2d474580e06986fc4b375ea8b128a83152871ba36684b1e&');
+  background-size: cover;
+  background-position: center;
   background-color: var(--bg-color);
   color: var(--text-color);
   margin: 0;
@@ -27,6 +30,37 @@ body {
   border-radius: 50%;
   border: 4px solid rgb(137, 14, 219);
   margin-bottom: 1em;
+}
+
+.about {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.projects  {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  border-left: 4px solid var(--accent);
+}
+
+.contact {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 2em;
+  border-radius: 10px;
 }
 
 .project-image {
@@ -67,14 +101,6 @@ ul li {
   margin-bottom: 0.5em;
 }
 
-.project-card {
-  background: var(--card-bg);
-  padding: 1em;
-  border-radius: 8px;
-  margin-bottom: 1em;
-  border-left: 4px solid var(--accent);
-}
-
 footer {
   text-align: center;
   padding: 1em;
@@ -112,11 +138,13 @@ body.forest {
 
 body.dark section {
   background: var(--card-bg);
+  background-color: rgba(0, 0, 0, 0.5);
   border-left: 4px solid var(--accent);
 }
 
 body.dark footer {
   background: var(--bg-color);
+  background-color: rgba(0, 0, 0, 0.5);
   color: var(--accent);
 }
 
