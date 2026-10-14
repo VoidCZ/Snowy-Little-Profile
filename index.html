@@ -1,90 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Snow's Little Profile</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal profile and creative projects, including the Tri-Star Federation lore archive.">
+  <title>Profile | Personal Archive</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="sky">
-    <img src="images/Miss_Bloomie_from_FPE__Danger_AU_icon_3.jpg" alt="Profile Picture" class="profile-pic" />
-    <h1>Snowy</h1>
-    <p class="tagline">Web Developer in Training and i have no idea what i'm doing</p>
-    <p class="tagline">Theme toggles?! no way!</p>
-        <div>
-          <button data-theme="light">Light Theme</button>
-          <button data-theme="dark">Dark Theme</button>
-          <button data-theme="void">Void Theme</button>
-          <button data-theme="forest">Forest Theme</button>
-        </div>
-      <script>
-      document.querySelectorAll('button[data-theme]').forEach(btn => {
-        btn.addEventListener('click', function() {
-        document.body.className = '';
-        document.body.classList.add(this.getAttribute('data-theme'));
-        localStorage.setItem('theme', this.getAttribute('data-theme'));
-        });
-      });
-    </script>
-    <p>Music by Globus - The Promise</p>
-      <audio id="bg-music" src="music/The Promise - Globus.mp3" autoplay loop></audio>
-      <button id="musicToggle">Toggle Music</button>
-        <script>
-        const music = document.getElementById("bg-music");
-        const toggle = document.getElementById("musicToggle");
-        let playing = false;
-
-        toggle.addEventListener("click", () => {
-        if (playing) {
-          music.pause();
-          toggle.textContent = "Play Site Music";
-        } else {
-          music.volume = 0.3;
-          music.play();
-          toggle.textContent = "Pause Site Music";
-        }
-        playing = !playing;
-      });
-    </script>
+  <header class="topbar">
+    <a class="brand" href="index.html"><img src="images/TSF.png" class="brand-mark" /><span>PERSONAL ARCHIVE<small>PROFILE // PROJECTS // LORE</small></span></a>
+    <nav class="topnav" aria-label="Main navigation">
+      <a class="active" href="index.html">Profile</a>
+      <a href="timeline.html">TSF Political Timeline</a>
+      <a href="characters.html">Command Perspectives</a>
+    </nav>
+    <div class="theme-tools">
+      <label class="sr-only" for="themeSelect">Color theme</label>
+      <select id="themeSelect" aria-label="Choose color theme">
+        <option value="default">Cyan</option>
+        <option value="violet">Violet</option>
+        <option value="forest">Forest</option>
+        <option value="ember">Ember</option>
+        <option value="light">Light</option>
+      </select>
+    </div>
   </header>
 
-  <main>
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        Greetings, i'm <b>Snow</b>, a loner, depressed and autistic person who loves to code, draw and annoy you. I enjoy experimenting with random ideas and finding new ways to learn.
-      </p>
-      <p>
-        I like to watch and play space or sci-fi related media.
-      </p>
+  <main class="content home-content">
+    <section class="hero profile-hero">
+      <img src="images/Miss_Bloomie_from_FPE__Danger_AU_icon_3.jpg" alt="Profile Picture" class="profile-avatar" />
+      <p class="eyebrow">PERSONAL PROFILE // CREATIVE ARCHIVE</p>
+      <h1>Snowy<br><em>Worldbuilder & Small Developer.</em></h1>
+      <p class="hero-copy">A home for personal interests, ongoing projects, and science-fiction worldbuilding.</p>
+      <div class="hero-meta"><span>WEB DEVELOPMENT</span><span>GAME DESIGN</span><span>SCI-FI LORE</span></div>
     </section>
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>OmniFront</h3>
-        <p>A mod created around a sci-fi world available on the game; <b>Rusted Warfare</b>, currently a small project made by only one university student.</p>
-        <img src="images/omnilog1.png" alt="OmniFront Screenshot" class="project-image" />
-        <p>Below are download links currently available to the mod:</p>
-        <p><a href="https://drive.google.com/file/d/1v4HB-LNcfDUflaJgEDVvfwx3HqTDv-Fi/view?usp=sharing" target="_blank">Pre-Alpha build (Deprecated, Supported)</a></p>
-        <p><a href="https://drive.google.com/file/d/1k69XIT68JFZbhzYmcW4moKwCOO7CpAoW/view?usp=sharing" target="_blank">Alpha build (In-Development)</a></p>
-        <p>Have issues, suggestions or looking to support the development? feel free to check out the server!</p>
+    <section class="content-grid">
+      <article class="panel">
+        <p class="eyebrow">01 // ABOUT</p>
+        <h2>About this profile</h2>
+        <p>This website is a central profile for creative and technical projects. It is designed to grow over time as new work and worldbuilding records are added.</p>
+        <p>Call me Snow, though i'm more referred as Void in closer circle, unnecessary knowledge by the way; and i have no idea what i'm doing.</p>
+      </article>
+      <article class="panel">
+        <p class="eyebrow">02 // INTERESTS</p>
+        <h2>Areas of interest</h2>
+        <ul class="record-list">
+          <li>Web development with HTML, and JavaScript</li>
+          <li>Java programming and small game projects</li>
+          <li>Science-fiction lore, factions, and character writing</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="panel projects-panel">
+      <p class="eyebrow">03 // FEATURED PROJECT</p>
+      <h2>Tri-Star Federation Archives</h2>
+      <p>TSF archive documents of the Vespera-9 crisis; the political dispute behind the intervention.</p>
+      <div class="project-links">
+        <a class="action-link" href="timeline.html">Political Timeline <span>↗</span></a>
+        <a class="action-link" href="characters.html">Command Perspectives <span>↗</span></a>
       </div>
     </section>
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>You may reach out to me whenever i'm online!</p>
-      <ul>
-        <li>Discord Server: <a href="https://discord.gg/nkCxdraAdR" target="_blank">Snow's Tavern</a></li>
-      </ul>
+    <section class="content-grid">
+      <article class="panel">
+        <p class="eyebrow">04 // CURRENT WORK</p>
+        <h2>Projects in progress</h2>
+        <ul class="record-list">
+          <li>Personal profile website and theme customization</li>
+          <li>Worldbuilding; Tri-Star Federation and Empire of Aether</li>
+        </ul>
+      </article>
+      <article class="panel">
+        <p class="eyebrow">05 // LINKS</p>
+        <h2>Contact & external links</h2>
+        <ul class="link-list">
+          <li><a href="https://github.com/VoidCZ" target="_blank" rel="noreferrer">GitHub profile</a></li>
+          <li><a href="https://discord.gg/6a7AXPDc3n">Discord Server</a></li>
+        </ul>
+      </article>
     </section>
+
+    <footer class="page-footer"><span>PERSONAL ARCHIVE</span><span></span></footer>
   </main>
-
-  <footer>
-    <p>© 2025 Snowy — Built with ❤️ and Coffee</p>
-  </footer>
-
 </body>
 </html>
